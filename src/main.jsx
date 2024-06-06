@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Error from "./Error.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div>Hello World!</div>,
+    errorElement: <Error></Error>
   },
   {
     path: "/about",
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div>Hello World! from about page</div>,
+    element: <div>Hello World! from contact page</div>,
   },
 ]);
 
