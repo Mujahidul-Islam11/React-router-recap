@@ -6,6 +6,7 @@ import Error from "./Error.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import Users from "./components/Users.jsx";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
       {
         path: '/Contact',
         element: <Contact></Contact>
-      }
+      },
+      {
+        path: '/Users',
+        element: <Users></Users>
+      },
     ]
   },
 ]);

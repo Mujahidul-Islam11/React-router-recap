@@ -6,6 +6,7 @@ const Navbar = () => {
             <nav>
                 <ul style={{display:"flex", gap:"20px"}}>
                     <Link to={'/'}>Home</Link>
+                    <Link to={'/Users'}>Users</Link>
                     <Link to={'/About'}>About</Link>
                     <Link to={'/Contact'}>Contact</Link>
                 </ul>
