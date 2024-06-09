@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Users = () => {
   const users = useLoaderData();
@@ -10,6 +10,7 @@ const Users = () => {
         <div key={user.id}>
           <ul>
             <li>{user?.name}</li>
+            <Link to={`/Users/${user?.id}`}>Show details</Link>
           </ul>
         </div>
       ))}
