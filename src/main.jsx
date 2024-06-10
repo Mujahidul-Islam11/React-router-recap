@@ -8,6 +8,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Users from "./components/Users.jsx";
 import UserDetails from "./components/UserDetails.jsx";
+import Groups from "./components/Groups.jsx";
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
       {
         path: '/Users',
         element: <Users></Users>,
-        loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+      },
+      {
+        path: '/Groups',
+        element: <Groups></Groups>,
+        loader: ()=> fetch('/groups.json'),
       },
       {
         path: '/Users/:id', // if you give '/Users/id' it will be a fixed route, but to set a dynamic
