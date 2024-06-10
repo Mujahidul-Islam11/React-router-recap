@@ -8,7 +8,7 @@ const UserDetails = () => {
     console.log(params)
     return (
         <div>
-            <h2>{params?.id}</h2>
+            <h2>User id: {params?.id}</h2>
             <h2>Username: {user?.name}</h2>
             <button onClick={()=> navigate(-1)}>Go back</button>
         </div>

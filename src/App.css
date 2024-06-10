@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+nav a.active{
+  text-decoration: underline;
+  color: greenyellow;
+}
+
+nav{
+  text-decoration: none;
+}

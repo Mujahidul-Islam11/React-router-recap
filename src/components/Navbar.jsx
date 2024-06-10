@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../App.css"
 
 const Navbar = () => {
     return (
@@ -6,8 +7,8 @@ const Navbar = () => {
             <nav>
                 <ul style={{display:"flex", gap:"20px"}}>
                     <Link to={'/'}>Home</Link>
-                    <Link to={'/Users'}>Users</Link>
-                    <Link to={'/About'}>About</Link>
+                    <NavLink to={'/Users'}>Users</NavLink>
+                    <NavLink to={'/About'}>About</NavLink>
                     <Link to={'/Contact'}>Contact</Link>
                 </ul>
             </nav>
